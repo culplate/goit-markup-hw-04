@@ -213,14 +213,14 @@ footer {
 .solutions-section {
   padding: 188px 0;
   margin: 0 auto;
-  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpeg);
-  background-size: cover;
+  background-size: 1440px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .solutions-container {
@@ -342,6 +342,70 @@ footer {
   background: var(--white-background-color);
 }
 
+.team-card-icon-container,
+.social-media-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.social-media-icon-container {
+  gap: 16px;
+}
+
+.social-media-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-icon {
+  fill: var(--light-color);
+}
+
+.team-card:hover .social-media-icon-wrapper {
+  background-color: var(--pressed-state-color);
+}
+
+/* CUSTOMERS SECTION */
+
+.customers-section {
+  padding: 120px 0;
+}
+
+.customers-icons-container {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.customers-icons-wrapper {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--subtle-color);
+}
+
+.customers-icon {
+  margin: 0 auto;
+  fill: var(--subtle-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-icons-wrapper:hover .customers-icon {
+  fill: var(--pressed-state-color);
+}
+
+.customers-icons-wrapper:hover {
+  border-color: var(--pressed-state-color);
+}
+
 /* PROJECTS */
 
 .projects-section {
@@ -442,6 +506,7 @@ footer {
 .cards-text {
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-bottom: 8px;
 }
 
 /* FILTERS BUTTONS */
@@ -456,6 +521,8 @@ footer {
   /* display: flex;
   flex-direction: column;
   justify-content: flex-start; */
+  display: flex;
+  gap: 120px;
 }
 
 .bottom-container .light-logo {
@@ -467,4 +534,13 @@ footer {
   color: var(--light-color);
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.social-m-heading {
+  color: var(--white-background-color);
+  margin-bottom: 16px;
+}
+
+.bottom .social-media-icon-wrapper:hover {
+  background-color: var(--success-color);
 }
