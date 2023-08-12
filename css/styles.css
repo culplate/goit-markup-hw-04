@@ -70,6 +70,10 @@ main {
   display: block;
 }
 
+.icon {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -192,6 +196,12 @@ footer {
 
 .solutions-section {
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpeg);
+  background-size: cover;
 }
 
 .solutions-container {
@@ -238,6 +248,18 @@ footer {
 
 .benefits-card .cards-title {
   margin-bottom: 8px;
+}
+
+.benefits-icon-wrapper {
+  background-color: var(--light-color);
+  padding: 24px 0;
+  margin-bottom: 8px;
+}
+
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
 }
 
 /* WE DOING SECTION */
