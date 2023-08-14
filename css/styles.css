@@ -687,6 +687,7 @@ footer {
 .closemodal:hover,
 .closemodal:focus {
   background-color: var(--pressed-state-color);
+  border: none;
 }
 
 .close-icon {
