@@ -56,7 +56,9 @@
       <section id="solutions" class="section solutions-section">
         <div class="container solutions-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-btn">Order Service</button>
+          <button type="button" class="order-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section id="benefits" class="section benefits-section">
@@ -372,5 +374,13 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay is-hidden" data-modal>
+      <div class="modal">
+        <button class="closemodal" data-modal-close>
+          <img src="./images/close.svg" alt="close modal button" />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
